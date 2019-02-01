@@ -1,0 +1,4 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <p align="right">@User.Identity.Name (@Membership.GetUser().ProviderUserKey) | @Html.ActionLink("Logout", "LogOff", "Home")</p>
+}
